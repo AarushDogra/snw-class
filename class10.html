@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        p{
+            color: aqua;
+            background-color: black;
+            padding: 20px;
+        }
+
+        @media  all and (max-width: 480px) {
+            p{
+                color: black;
+                background-color: aqua;
+                border: 2px solid salmon;
+            }
+        }
+    /* change the background color when  display is between 480 px and 768px  */
+        @media screen and (min-width:480px) and (max-width:768px){
+            p{
+                color: wheat;
+                background-color: blue;
+            }
+
+        }
+        div{
+            background-color: teal;
+            padding: 10px;
+            width: 300px;
+            height: 100px;
+            border: 1px solid black;
+            /* 4th for radius */
+            box-shadow: 10px 10px 10px  red, 15px 10px 10px blue;
+            box-sizing: border-box;
+            
+
+        }
+    </style>
+</head>
+<body>
+    <p> This is P tag</p>
+    <div>
+        This is div tag
+    </div>
+</body>
+</html>

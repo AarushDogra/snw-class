@@ -1,0 +1,31 @@
+h2{
+    color: blue;
+}
+p{
+    color: blue;
+} 
+
+/* universal style  */
+*{
+    color: blue;
+    margin: 0;
+    padding: 0;
+}
+
+/* class tag */
+.hi{
+    color: blueviolet;
+}
+
+/* id tag */
+#hello{
+    color: rgb(255, 0, 0);
+}
+
+/* grouping */
+
+h1,h2{
+    color: blueviolet;
+}
+
+/* HTML DOM TREE:- #ID>p GREATER THAN SIZE IS USED IN DIRECT AND SPACE IS USED IN ALL THINGS*/

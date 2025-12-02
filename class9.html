@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        body {
+            background-color: tomato;
+            font-size: 20px;
+            line-height: 1.5px;
+            color: blue;
+        }
+        .container {
+            border: 2px solid black;
+            padding: 10px;
+            margin: 100px auto;
+            width: 900px;
+            /* display property grid */
+            display: grid;
+            /* cloumn property with 3 columns of 100px each
+             */
+            grid-template-columns: 100px 100px 100px;
+            /* gap between the items */
+            gap: 0px;
+            /* alternate way to define columns */
+            grid-template-columns: repeat(10,50px);
+            grid-template-columns: 300px 300px 300px;
+            /* fractional units */
+            grid-template-columns: 1fr 1fr 1fr;
+        }
+        .item{
+            background-color: dodgerblue;
+            color: white;
+            padding: 20px;
+            border: 1px solid lightblue;
+
+        }
+        .item1{
+            /* grid-column: 1 / 4; */
+            grid-row: 1/3;
+            background-color: black;
+            /* it counts cloumn not lines 
+            */
+            grid-column: span 3;
+
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="item item1">1</div>
+        <div class="item item2">2</div>
+        <div class="item item3">3</div>
+        <div class="item item4">4</div>
+        <div class="item item5">5</div>
+        <div class="item item6">6</div>
+        <div class="item item7">7</div>
+        <div class="item item8">8</div>
+        <div class="item item9">9</div>
+    </div>
+</body>
+</html>

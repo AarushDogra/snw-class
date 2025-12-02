@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        .outer{
+            height: 700px;
+            width: auto;
+            border: 2px solid black;
+            background-color: lightskyblue;
+            display: flex;
+            flex-direction: row;
+            /* changes in main axis only */
+            /* space between 
+            space around 
+            space evenly */
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .inner{
+            height: 100px;
+            width: 100px;
+            background-color: coral;
+            margin: 10px;
+        }
+
+    
+    </style>
+</head>
+<body>
+    <!-- in on parent only impact on direct child only it will be present there horizontally x axis is know as main axis and y is called cross axis -->
+    <!-- if we need row wise it is called flex-direction: row; main axis is x and cross axis is y -->
+     <!-- if we need column wise it is called flex-direction: column; main axis is y and cross axis is x -->    
+    <div class="outer">
+        <div class="inner">1</div>
+        <div class="inner">2</div>
+        <div class="inner">3</div>
+        <div class="inner">4</div>
+    </div>
+
+    </div>
+</body>
+</html>

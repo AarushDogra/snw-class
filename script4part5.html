@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input id="searchBox" placeholder="Type to search..."/>
+    <p id="output" style="color: purple;"></p>
+    <script>
+        let searchBox = document.getElementById('searchBox');
+        let outputPara = document.getElementById('output'); 
+        searchBox.addEventListener('input', function() {
+            let query = searchBox.value;
+            outputPara.textContent = 'You are searching for: ' + query;
+        });
+    </script>
+</body>
+</html>

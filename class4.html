@@ -1,0 +1,97 @@
+
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+ </head>
+ <body>
+    <!-- html forms -->
+     <h2>Registration Form</h2>
+     <!-- action means where you want to store data  -->
+     <form action="#" method="post">
+        <fieldset>
+            <!-- legend is used as in line katt kai lekho -->
+            <legend>Personal Information</legend>
+            <!-- when for and id is mached then when we hover and click full name it highlits box -->
+             <!-- name is used to sen the name of given data in backhand -->
+            <label for="fullName"> Full Name :</label>
+            <input type="text" id="fullName" name="full_name" placeholder="Enter Your Name">
+            <br><br>
+            
+            <label for="email">Email :  </label>
+            <input type="email" id="email" name="email" placeholder="Enter Your Email">
+            <br><br>
+            
+            <label for="password">  Password :  </label>
+            <input type="password" id="password" name="password" placeholder="Enter Your Password">
+            <br><br>
+            
+            <label for="phone">  Phone Number :  </label>
+            <input type="tel" id="phone" name="phone" placeholder="Enter Your Phone Number">
+            <br><br>
+            
+            <label for="website">  Website :  </label>
+            <input type="url" id="website" name="website" placeholder="Enter Your url">
+
+        </fieldset>
+
+        <fieldset>
+            <legend>Additional Info</legend>
+
+            <label for="dob">DOB :</label>
+            <input type="date" id="dob" name="DOB" min="2006-07-02" max="2025-07-02">
+            
+            <br><br>
+            <label for="age">  AGE :  </label>
+            <input type="number" id="age" name="age" placeholder="Enter Your Age">
+
+            <br><br>
+            <label for="skill">  Skill Level(1-100) :  </label>
+            <input type="range" id="skill" name="Skill" min="1" max="100" value="50">
+
+            <br><br>
+            <label for="bio">Short Bio :  </label>
+            <textarea name="Bio" id="bio" placeholder="Enter Your Bio"></textarea>
+
+            <br><br>
+            <p>Gender :</p>
+            <!-- when name tag is same then only one textbox is selected -->
+            <label for="male">Male</label>
+            <input type="radio" id="male" name="gender">
+
+            <label for="Female">Female</label>
+            <input type="radio" id="Female" name="gender">
+
+            <label for="chakke">CHAKKE</label>
+            <input type="radio" id="chakke" name="gender" >
+
+            <br><br>
+            <p>Topic of interest :</p>
+            <input type="checkbox" id="ai" name="ai">
+            <label for="ai">AI</label>
+            
+            <input type="checkbox" id="python" name="python">
+            <label for="python">Python</label>
+            
+            <input type="checkbox" id="webdev" name="webdev" >
+            <label for="webdev">Web Development</label>
+
+            <br><br>
+            <p>Country:</p>
+            <select name="country" id="cn">
+            <option value="">-select country-</option>
+            <option value="In">India</option>
+            <option value="US">USA</option>
+            </select>
+
+
+        </fieldset>
+
+        <BUtton type="submit">Submit</BUtton>
+        <button type="reset">Reset</button>
+
+     </form>
+ </body>
+ </html>

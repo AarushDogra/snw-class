@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    h1{
+        color: brown;
+    }
+    /* pseudo-class for hover all element */
+    /* hover class */
+    
+    h1:hover{
+        cursor: pointer;
+    }
+    /* focus class after we click on it */
+    input:focus{
+        background-color: lightgray;
+    }
+    /* text highlight through pseudo-element some portion will get affected */
+    h1::selection{
+        background-color: yellow;
+        color: red;
+    }
+    /* pseudo-element for first letter */
+    h1::first-letter{
+        font-size: 200%;
+        color: blue;
+    }
+    /* pseudo-element for first line */
+    h1::first-line{
+        font-size: 150%;
+        color: green;
+    }
+    /* pseudo-element for all */
+    h1{
+        font-family: Arial, sans-serif;
+    }
+    /* pseudo-element for before */
+    h1::before{
+        content: "This is not present in HTML ";
+        color: purple;
+    }
+    /* pseudo-element for after */
+    h1::after{
+        content: " This is also not present in HTML";
+        color: orange;
+    }
+    /* pseudo-element for all */
+    h1, input{
+        border: 2px solid black;
+        padding: 10px;
+        margin: 10px;
+    }
+    /* pseudo-class for hover all element */
+    h1:hover, input:hover{
+        background-color: lightyellow;
+    }
+    /* pseudo-class for focus all element */
+    input:focus{
+        background-color: lightgray;
+    }
+    /* overflow */
+    h1, input{
+        overflow: hidden;
+    }
+.long-para {
+  width: 200px;
+  border: 2px solid black;
+  white-space: nowrap;
+  /* text overflow */
+  overflow: hidden;
+  text-overflow: ellipsis;
+  font-family: Arial, sans-serif;
+}   
+p:hover {
+  background-color: lightblue;
+  /* overflow scroll */
+  overflow: scroll;
+  text-overflow: ellipsis;
+}   
+</style>
+<body>
+    <h1>This is Heading</h1>
+    <input type="text" placeholder="This is input box">
+    <input type="password" placeholder="This is password box">
+    <div>    
+        <p class="long-para">
+            This is a loooooooooooooooooooong text! This will not fit in this box.
+        </p>
+    </div>
+</body>
+</html>
