@@ -124,3 +124,7 @@ console.log("Age: " + person.age);
 
 person.age = 31;
 console.log("Updated Age: " + person.age); 
+person.city = "New York";
+console.log("Person after adding city: " + JSON.stringify(person));
+
+// End of script1.js
